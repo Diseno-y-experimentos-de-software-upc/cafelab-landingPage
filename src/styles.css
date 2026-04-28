@@ -375,26 +375,30 @@ body {
 }
 
 /* ======= SECCIÓN 6 - FAQ Y CONTACTO ======= */
+/* Nota: el layout detallado vive en faq-contact.component.css; aquí solo coherencia global */
 .faq-contact-section {
-  background-color: #F2E3BC;
-  min-height: 100vh;
+  background-color: #f2e3bc;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  align-items: flex-start;
+  padding: 3rem 1.5rem;
+  scroll-margin-top: 4rem;
 }
 
 .faq-contact-wrapper {
-  background-color: #C19875;
-  width: 1103px;
-  height: 640px;
+  background-color: #c19875;
+  width: 100%;
+  max-width: 1103px;
+  height: auto;
+  min-height: 0;
   border-radius: 20px;
   display: flex;
   gap: 2rem;
-  padding: 3rem;
-  color: #4D4949;
+  padding: 2rem 2rem 2.5rem;
+  color: #4d4949;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
 }
 
 .faq {
@@ -446,34 +450,19 @@ body {
 
 .contact form {
   background-color: #fff;
-  padding: 1rem; /* Reducir el padding */
+  padding: 1rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem; /* Reducir el espacio entre elementos */
-  color: #000;
+  gap: 0.8rem;
+  color: #333;
+  box-sizing: border-box;
 }
 
-/* Ajustar los inputs y textarea */
-.contact input, .contact textarea {
-  padding: 0.6rem; /* Reducir el padding de los campos */
-  font-size: 0.9rem; /* Reducir el tamaño de la fuente */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.contact button {
-  background-color: #2C2C2C;
-  color: white;
-  padding: 1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.contact button:hover {
-  opacity: 0.9;
+/* Ajustar los inputs y textarea (sin pisar estilos del componente en errores/focus) */
+.contact input,
+.contact textarea {
+  box-sizing: border-box;
 }
 
 /* ======= MEDIA QUERIES ======= */

@@ -1,20 +1,58 @@
 <footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section" *ngFor="let section of footerSections">
-        <h3>{{ section.title }}</h3>
-        <ul>
-          <li *ngFor="let link of section.links">
-            <a
-              [href]="link.isEmail ? 'mailto:' + link.url : link.url"
-              [target]="link.isEmail ? '_self' : '_blank'"
-              [rel]="link.isEmail ? '' : 'noopener noreferrer'"
-            >
-              {{ link.text }}
-            </a>
-          </li>
-        </ul>
+  <div class="container footer-inner">
+    <div class="footer-top-row">
+      <div class="footer-content">
+        <div class="footer-section" *ngFor="let section of footerSections">
+          <h3>{{ section.title }}</h3>
+          <ul>
+            <li *ngFor="let link of section.links">
+              <a
+                *ngIf="!link.opensTermsModal"
+                [href]="link.isEmail ? 'mailto:' + link.url : link.url"
+                [target]="linkTarget(link)"
+                [rel]="linkRel(link)"
+              >
+                {{ link.text }}
+              </a>
+              <button
+                *ngIf="link.opensTermsModal"
+                type="button"
+                class="footer-link-button"
+                (click)="termsModal.open()"
+              >
+                {{ link.text }}
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+
+  <ng-container *ngIf="termsModal.isOpen$ | async">
+    <div
+      class="terms-modal-backdrop"
+      (click)="termsModal.close()"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="terms-modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="terms-heading-anchor"
+      (click)="$event.stopPropagation()"
+    >
+      <button
+        type="button"
+        class="terms-modal-close"
+        (click)="termsModal.close()"
+        [attr.aria-label]="'TERMS.CLOSE_MODAL' | translate"
+      >
+        ×
+      </button>
+      <div class="terms-modal-scroll">
+        <app-terms-legal [lightMode]="true"></app-terms-legal>
+      </div>
+    </div>
+  </ng-container>
 </footer>

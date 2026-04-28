@@ -140,6 +140,42 @@
     "EMAIL_PLACEHOLDER": "ejemplo@correo.com",
     "MESSAGE_PLACEHOLDER": "Escribe tu mensaje aquí..."
   },
+  "TERMS": {
+    "DOC_TITLE": "TÉRMINOS Y CONDICIONES DE USO - CAFÉ LAB",
+    "CLOSE_MODAL": "Cerrar términos y condiciones",
+    "FOOTER_LEAD": "Texto legal aplicable al uso de la plataforma Café Lab y al envío del formulario de contacto.",
+    "ACCEPT_BEFORE": "He leído y acepto los ",
+    "ACCEPT_LINK": "términos y condiciones de uso",
+    "ACCEPT_AFTER": ".",
+    "S1_TITLE": "1. INFORMACIÓN GENERAL",
+    "S1_B1_TITLE": "Objeto del Servicio:",
+    "S1_B1_TEXT": "Café Metrix otorga una licencia de uso de la plataforma Café Lab para el monitoreo de procesos de café mediante dispositivos IoT y gestión de inventarios.",
+    "S1_B2_TITLE": "Responsabilidad Ética y Profesional:",
+    "S1_B2_TEXT": "En cumplimiento con el código de ética de ACM/IEEE y del CIP, garantizamos que el software es seguro, cumple con estándares de calidad y no perjudica la operación del cliente.",
+    "S2_TITLE": "2. MARCO NORMATIVO APLICABLE",
+    "S2_INTRO": "El servicio se rige bajo la legislación peruana vigente:",
+    "S2_B1": "Protección de Datos Personales: Ley N° 29733 y su Reglamento (D.S. N° 003-2013-JUS).",
+    "S2_B2": "Marco Digital: Ley N° 30096 (Ley de Delitos Informáticos) y el Código de Protección y Defensa del Consumidor (Ley N° 29571).",
+    "S3_TITLE": "3. CONDICIONES DE USO Y RESTRICCIONES",
+    "S3_B1_TITLE": "Capacidad Legal:",
+    "S3_B1_TEXT": "El usuario debe ser mayor de edad y tener capacidad legal para contratar.",
+    "S3_B2_TITLE": "Restricciones:",
+    "S3_B2_TEXT": "Queda estrictamente prohibido realizar ingeniería inversa sobre el software o los dispositivos IoT, así como utilizar la plataforma para falsificar datos de trazabilidad que afecten la transparencia del mercado de café de especialidad.",
+    "S4_TITLE": "4. PROTECCIÓN DE DATOS Y PRIVACIDAD",
+    "S4_B1_TITLE": "Propiedad de los Datos:",
+    "S4_B1_TEXT": "Café Metrix garantiza que los datos de tueste, catas y sensores son propiedad exclusiva del cliente.",
+    "S4_B2_TITLE": "Seguridad:",
+    "S4_B2_TEXT": "Se aplican medidas técnicas para prevenir accesos no autorizados, asegurando la integridad de los resultados de los experimentos de café.",
+    "S5_TITLE": "5. DISPONIBILIDAD Y RESPONSABILIDADES (SLA)",
+    "S5_B1_TITLE": "Garantía de Servicio:",
+    "S5_B1_TEXT": "Se garantiza un tiempo de actividad (uptime) del 99.5%.",
+    "S5_B2_TITLE": "Mantenimiento:",
+    "S5_B2_TEXT": "Cualquier mantenimiento programado que afecte la visibilidad de los datos en tiempo real será notificado con al menos 24 horas de antelación.",
+    "S6_TITLE": "6. PROPIEDAD INTELECTUAL",
+    "S6_TEXT": "El software, el diseño de la interfaz y la tecnología de los sensores TrackSilo son propiedad exclusiva de Café Metrix.",
+    "S7_TITLE": "7. RESOLUCIÓN DE CONTROVERSIAS",
+    "S7_B1": "Cualquier controversia será sometida a la jurisdicción de los tribunales de Lima, Perú, bajo la ley peruana."
+  },
   "VALIDATION": {
     "REQUIRED": "Este campo es obligatorio",
     "MIN_LENGTH": "Mínimo {{min}} caracteres",
@@ -148,7 +184,8 @@
     "NO_SPECIAL_CHARS": "No se permiten caracteres especiales",
     "INVALID_EMAIL": "Correo electrónico inválido",
     "INVALID_DOMAIN": "Dominio de correo inválido",
-    "NO_ONLY_SPACES": "No puede contener solo espacios"
+    "NO_ONLY_SPACES": "No puede contener solo espacios",
+    "TERMS_REQUIRED": "Debe aceptar los términos y condiciones para continuar"
   },
   "FOOTER": {
     "QUICK_LINKS": {
@@ -156,7 +193,8 @@
       "HOME": "Inicio",
       "BENEFITS": "Beneficios",
       "PLANS": "Planes",
-      "CONTACT": "Contactos"
+      "CONTACT": "Contactos",
+      "TERMS": "Términos y condiciones"
     },
 
     "RESOURCES": {

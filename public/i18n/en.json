@@ -140,6 +140,42 @@
     "EMAIL_PLACEHOLDER": "example@email.com",
     "MESSAGE_PLACEHOLDER": "Write your message here..."
   },
+  "TERMS": {
+    "DOC_TITLE": "TERMS AND CONDITIONS OF USE - CAFÉ LAB",
+    "CLOSE_MODAL": "Close terms and conditions",
+    "FOOTER_LEAD": "Legal text applicable to use of the Café Lab platform and to submitting the contact form.",
+    "ACCEPT_BEFORE": "I have read and accept the ",
+    "ACCEPT_LINK": "terms and conditions of use",
+    "ACCEPT_AFTER": ".",
+    "S1_TITLE": "1. GENERAL INFORMATION",
+    "S1_B1_TITLE": "Purpose of the Service:",
+    "S1_B1_TEXT": "Café Metrix grants a license to use the Café Lab platform for monitoring coffee processes through IoT devices and inventory management.",
+    "S1_B2_TITLE": "Ethical and Professional Responsibility:",
+    "S1_B2_TEXT": "In compliance with the ACM/IEEE code of ethics and the CIP (Peruvian College of Engineers), we guarantee that the software is secure, meets quality standards, and does not harm the client's operations.",
+    "S2_TITLE": "2. APPLICABLE REGULATORY FRAMEWORK",
+    "S2_INTRO": "The service is governed by current Peruvian legislation:",
+    "S2_B1": "Personal Data Protection: Law No. 29733 and its Regulations (Supreme Decree No. 003-2013-JUS).",
+    "S2_B2": "Digital Framework: Law No. 30096 (Computer Crime Law) and the Consumer Protection and Defense Code (Law No. 29571).",
+    "S3_TITLE": "3. CONDITIONS OF USE AND RESTRICTIONS",
+    "S3_B1_TITLE": "Legal Capacity:",
+    "S3_B1_TEXT": "The user must be of legal age and have the legal capacity to contract.",
+    "S3_B2_TITLE": "Restrictions:",
+    "S3_B2_TEXT": "Reverse engineering of the software or IoT devices is strictly prohibited, as is using the platform to falsify traceability data that affects transparency in the specialty coffee market.",
+    "S4_TITLE": "4. DATA PROTECTION AND PRIVACY",
+    "S4_B1_TITLE": "Data Ownership:",
+    "S4_B1_TEXT": "Café Metrix guarantees that roasting, cupping, and sensor data are the exclusive property of the client.",
+    "S4_B2_TITLE": "Security:",
+    "S4_B2_TEXT": "Technical measures are applied to prevent unauthorized access, ensuring the integrity of coffee experiment results.",
+    "S5_TITLE": "5. AVAILABILITY AND RESPONSIBILITIES (SLA)",
+    "S5_B1_TITLE": "Service Guarantee:",
+    "S5_B1_TEXT": "A 99.5% uptime is guaranteed.",
+    "S5_B2_TITLE": "Maintenance:",
+    "S5_B2_TEXT": "Any scheduled maintenance affecting real-time data visibility will be notified at least 24 hours in advance.",
+    "S6_TITLE": "6. INTELLECTUAL PROPERTY",
+    "S6_TEXT": "The software, interface design, and TrackSilo sensor technology are the exclusive property of Café Metrix.",
+    "S7_TITLE": "7. DISPUTE RESOLUTION",
+    "S7_B1": "Any dispute shall be submitted to the jurisdiction of the courts of Lima, Peru, under Peruvian law."
+  },
   "VALIDATION": {
     "REQUIRED": "This field is required",
     "MIN_LENGTH": "Minimum {{min}} characters",
@@ -148,7 +184,8 @@
     "NO_SPECIAL_CHARS": "Special characters are not allowed",
     "INVALID_EMAIL": "Invalid email address",
     "INVALID_DOMAIN": "Invalid email domain",
-    "NO_ONLY_SPACES": "Cannot contain only spaces"
+    "NO_ONLY_SPACES": "Cannot contain only spaces",
+    "TERMS_REQUIRED": "You must accept the terms and conditions to continue"
   },
   "FOOTER": {
     "QUICK_LINKS": {
@@ -156,7 +193,8 @@
       "HOME": "Home",
       "BENEFITS": "Benefits",
       "PLANS": "Plans",
-      "CONTACT": "Contact"
+      "CONTACT": "Contact",
+      "TERMS": "Terms and conditions"
     },
 
     "RESOURCES": {

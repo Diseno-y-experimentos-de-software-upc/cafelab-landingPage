@@ -1,30 +1,35 @@
 .faq-contact-section {
-  background-color: #F2E3BC;
-  min-height: 100vh;
+  background-color: #f2e3bc;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  align-items: flex-start;
+  padding: 3rem 1.5rem;
+  scroll-margin-top: 4rem;
 }
 
 .faq-contact-wrapper {
-  background-color: #C19875;
+  background-color: #c19875;
   width: 100%;
   max-width: 1103px;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: start;
   gap: 2rem;
-  padding: 2rem;
-  color: #4D4949;
+  padding: 2rem 2rem 2.5rem;
+  color: #4d4949;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 0;
 }
 
 .faq {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  min-width: 0;
 }
 
 .faq-title, .contact-title {
@@ -65,6 +70,7 @@
 .contact {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .contact form {
@@ -76,7 +82,7 @@
   gap: 1rem;
   color: #333;
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Estilos de campos del formulario */
@@ -156,6 +162,69 @@ textarea:focus {
   font-size: 0.75rem;
   color: #666;
   margin-top: 0.25rem;
+}
+
+.terms-group {
+  margin-bottom: 0;
+  padding: 0.65rem 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.terms-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.terms-checkbox-text {
+  display: inline;
+}
+
+.terms-inline-link,
+button.terms-link-btn.terms-inline-link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+.terms-inline-link:hover,
+button.terms-link-btn.terms-inline-link:hover {
+  color: #0056b3;
+}
+
+button.terms-link-btn.terms-inline-link:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.terms-checkbox-label input[type='checkbox'] {
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.error-checkbox {
+  outline: 2px solid #dc3545;
+  outline-offset: 2px;
 }
 
 .form-group {
@@ -291,17 +360,8 @@ textarea:focus {
 
 @media (max-width: 600px) {
   .faq-contact-wrapper {
-    background-color: #C19875;
-    width: 100%;
-    max-width: 1200px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 2.5rem;
-    color: #4D4949;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
   }
 
 

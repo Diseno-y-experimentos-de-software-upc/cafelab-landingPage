@@ -1,0 +1,77 @@
+.terms-legal-inner {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.terms-legal-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+  color: #f8f8f8;
+}
+
+.terms-legal-lead {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(248, 248, 248, 0.85);
+  margin: 0 0 1.5rem;
+}
+
+.terms-legal-section {
+  margin-bottom: 1.25rem;
+}
+
+.terms-legal-section:last-child {
+  margin-bottom: 0;
+}
+
+.terms-legal-section-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #c19875;
+}
+
+.terms-legal-intro,
+.terms-legal-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: rgba(248, 248, 248, 0.92);
+  margin: 0 0 0.5rem;
+}
+
+.terms-legal-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: rgba(248, 248, 248, 0.92);
+}
+
+.terms-legal-list li {
+  margin-bottom: 0.45rem;
+}
+
+.terms-legal-list li:last-child {
+  margin-bottom: 0;
+}
+
+:host.terms-legal--light .terms-legal-title {
+  color: #1f2937;
+}
+
+:host.terms-legal--light .terms-legal-lead {
+  color: #4b5563;
+}
+
+:host.terms-legal--light .terms-legal-section-title {
+  color: #8b5a3c;
+}
+
+:host.terms-legal--light .terms-legal-intro,
+:host.terms-legal--light .terms-legal-paragraph,
+:host.terms-legal--light .terms-legal-list {
+  color: #374151;
+}

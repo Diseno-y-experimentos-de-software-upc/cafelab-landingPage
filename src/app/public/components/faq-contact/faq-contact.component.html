@@ -92,6 +92,33 @@
           </div>
         </div>
 
+        <!-- Aceptación de términos (texto legal en ventana modal desde el pie) -->
+        <div class="form-group terms-group">
+          <label class="terms-checkbox-label" for="aceptoTerminos">
+            <input
+              type="checkbox"
+              id="aceptoTerminos"
+              formControlName="aceptoTerminos"
+              [class.error-checkbox]="isFieldInvalid('aceptoTerminos')"
+            />
+            <span class="terms-checkbox-text">
+              {{ 'TERMS.ACCEPT_BEFORE' | translate }}
+              <button
+                type="button"
+                class="terms-inline-link terms-link-btn"
+                (click)="openTermsModal($event)"
+              >
+                {{ 'TERMS.ACCEPT_LINK' | translate }}
+              </button>
+              {{ 'TERMS.ACCEPT_AFTER' | translate }}
+              <span class="required-asterisk">*</span>
+            </span>
+          </label>
+          <div class="error-message" *ngIf="isFieldInvalid('aceptoTerminos')">
+            {{ getFieldError('aceptoTerminos') }}
+          </div>
+        </div>
+
         <!-- Botones -->
         <div class="form-actions">
           <button

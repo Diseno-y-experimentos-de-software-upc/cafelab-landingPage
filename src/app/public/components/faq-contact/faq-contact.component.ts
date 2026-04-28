@@ -10,6 +10,7 @@ import {
 import { NgForOf, NgIf } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../../core/services/language.service';
+import { TermsModalService } from '../../../core/services/terms-modal.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { environment } from '../../../../environments/environment';
 
@@ -23,6 +24,7 @@ interface ContactForm {
   apellidos: string;
   email: string;
   mensaje: string;
+  aceptoTerminos: boolean;
 }
 
 @Component({
@@ -46,7 +48,8 @@ export class FaqContactComponent implements OnInit {
     private fb: FormBuilder,
     private translate: TranslateService,
     private languageService: LanguageService,
-    private http: HttpClient
+    private http: HttpClient,
+    private termsModal: TermsModalService
   ) {
     this.contactForm = this.fb.group({
       nombre: [
@@ -79,6 +82,7 @@ export class FaqContactComponent implements OnInit {
           this.noOnlySpacesValidator,
         ],
       ],
+      aceptoTerminos: [false, Validators.requiredTrue],
     });
   }
 
@@ -202,6 +206,11 @@ export class FaqContactComponent implements OnInit {
         if (errors['onlySpaces'])
           return this.translate.instant('VALIDATION.NO_ONLY_SPACES');
         break;
+
+      case 'aceptoTerminos':
+        if (errors['required'])
+          return this.translate.instant('VALIDATION.TERMS_REQUIRED');
+        break;
     }
 
     return '';
@@ -215,6 +224,12 @@ export class FaqContactComponent implements OnInit {
   isFieldInvalid(fieldName: string): boolean {
     const field = this.contactForm.get(fieldName);
     return field ? field.invalid && field.touched : false;
+  }
+
+  openTermsModal(event: Event): void {
+    event.preventDefault();
+    event.stopPropagation();
+    this.termsModal.open();
   }
 
   onSubmit() {
