@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-hero',
@@ -9,6 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeroComponent {
   onRegister() {
-    window.open('https://coffee-lab-10031.web.app/login', '_blank');
+    window.open(environment.appLoginUrl, '_blank');
   }
 }

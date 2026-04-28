@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NgForOf } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../../core/services/language.service';
+import { environment } from '../../../../environments/environment';
 import { forkJoin, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
@@ -60,6 +61,6 @@ export class PlansComponent implements OnInit, OnDestroy {
 
   onPlanSelect(plan: Plan) {
     console.log('Plan selected:', plan.title);
-    window.open('https://coffee-lab-10031.web.app/login', '_blank');
+    window.open(environment.appLoginUrl, '_blank');
   }
 }

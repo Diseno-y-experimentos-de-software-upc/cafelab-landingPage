@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForOf, CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import {LanguageService} from '../../../core/services/language.service';
+import { LanguageService } from '../../../core/services/language.service';
+import { environment } from '../../../../environments/environment';
 
 interface Benefit {
   title: string;
@@ -47,7 +48,7 @@ export class BenefitsComponent implements OnInit {
           rest: this.translate.instant('BENEFITS.BARISTA.CTA_REST')
         },
         buttonText: this.translate.instant('BENEFITS.BARISTA.BUTTON'),
-        link: 'https://coffee-lab-10031.web.app/login'
+        link: environment.appLoginUrl
       },
       {
         title: this.translate.instant('BENEFITS.COFFEE_SHOP.TITLE'),
@@ -57,7 +58,7 @@ export class BenefitsComponent implements OnInit {
           rest: this.translate.instant('BENEFITS.COFFEE_SHOP.CTA_REST')
         },
         buttonText: this.translate.instant('BENEFITS.COFFEE_SHOP.BUTTON'),
-        link: 'https://coffee-lab-10031.web.app/login'
+        link: environment.appLoginUrl
       }
     ];
   }

@@ -3,6 +3,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../../core/services/language.service';
 import { Subscription } from 'rxjs';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +15,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   currentLanguage = 'ES';
   isMobileMenuOpen = false;
   private languageSubscription?: Subscription;
+  readonly loginUrl = environment.appLoginUrl;
 
   constructor(
     private translate: TranslateService,
@@ -46,6 +48,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.isMobileMenuOpen = false;
   }
   goToLogin() {
-    window.open('https://coffee-lab-10031.web.app/login', '_blank');
+    window.open(this.loginUrl, '_blank');
   }
 }
