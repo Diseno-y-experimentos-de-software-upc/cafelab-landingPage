@@ -42,51 +42,38 @@
   "PLANS": {
     "TITLE": "Scale your coffee with tools tailored to you.",
     "FOOTER": "All our plans include technical documentation, personalized support and intuitive visualizations for baristas and coffee shops.",
-    "BASE_PLAN": {
-      "TITLE": "Base Coffee Plan",
-      "PRICE": "$5/month",
+    "BARISTA_PLAN": {
+      "TITLE": "Barista Plan",
+      "PRICE": "$9 / month",
       "FEATURES": [
-        "✓ Basic roast recording (manual).",
-        "✓ Recipe and module library.",
-        "✓ Common defect recording.",
-        "✓ Storage guide and simple inventory control.",
-        "✓ Mobile access."
+        "Cupping sessions",
+        "Defect library",
+        "Roast-flavor correlation",
+        "Grinding calibration",
+        "Recipes"
       ],
-      "BUTTON": "Learn about Base Coffee Plan"
+      "BUTTON": "Learn about Barista Plan"
     },
-    "TECHNICAL_PLAN": {
-      "TITLE": "Technical Roasting Plan",
-      "PRICE": "$12/month",
+    "OWNER_ADMIN_PLAN": {
+      "TITLE": "Owner/Admin Plan",
+      "PRICE": "$9 / month",
       "FEATURES": [
-        "✓ Everything from Base Coffee Plan.",
-        "✓ Automated costs and batch comparison.",
-        "✓ Digital roast recording with custom curves.",
-        "✓ Weight loss and yield calculator.",
-        "✓ Extended library of profiles and curves by origin."
+        "Suppliers",
+        "Inventory",
+        "Coffee lots",
+        "Cost management",
+        "Roast profiles"
       ],
-      "BUTTON": "Learn about Technical Roasting Plan"
+      "BUTTON": "Learn about Owner/Admin Plan"
     },
-    "ARTIST_PLAN": {
-      "TITLE": "Roasting Artist Plan",
-      "PRICE": "$15/month",
+    "COMPLETE_PLAN": {
+      "TITLE": "Complete Plan",
+      "PRICE": "$15 / month",
       "FEATURES": [
-        "✓ Custom recipe manager by method and beverage.",
-        "✓ Grinder and ratio calibrator.",
-        "✓ Portfolio with notes by client, origin or evaluation.",
-        "✓ Extraction and results recording."
+        "Barista Plan",
+        "Owner/Admin Plan"
       ],
-      "BUTTON": "Learn about Roasting Artist Plan"
-    },
-    "SPECIALTY_PLAN": {
-      "TITLE": "Specialty Plan",
-      "PRICE": "$20/month",
-      "FEATURES": [
-        "✓ Inventory control (green and roasted).",
-        "✓ IoT sensor connectivity (roasters).",
-        "✓ Sensory modeling and control.",
-        "✓ Certification and training modules."
-      ],
-      "BUTTON": "Learn about Specialty Plan"
+      "BUTTON": "Learn about Complete Plan"
     }
   },
   "TESTIMONIALS": {
@@ -220,7 +207,6 @@
       "CONTACT": "Contact",
       "TERMS": "Terms and conditions"
     },
-
     "RESOURCES": {
       "TITLE": "Resources",
       "LINKEDIN": "LinkedIn",

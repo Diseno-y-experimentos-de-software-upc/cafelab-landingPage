@@ -700,9 +700,11 @@ body {
 /* Estilos para la cuadrícula de los planes */
 .planes-cafetal__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+  grid-template-columns: repeat(3, minmax(280px, 350px));
+  justify-content: center;
   gap: 30px; /* Espaciado entre las columnas */
   margin-bottom: 40px;
+  align-items: start;
 }
 
 /* Estilo general de cada plan */
@@ -712,6 +714,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave para los planes */
   padding: 20px;
   height: 100%;
+  width: 100%;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -738,6 +741,9 @@ body {
   border-radius: 10px;
   position: relative;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /* Precio de cada plan */
@@ -765,12 +771,14 @@ body {
 .planes-cafetal__button {
   background-color: #414535;
   color: white;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 25px;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: auto;
+  box-sizing: border-box;
 }
 
 /* Efecto hover para el botón */
@@ -778,6 +786,14 @@ body {
   background-color: white;
   color: #414535;
   border: 2px solid #414535;
+}
+
+.planes-cafetal__button:focus-visible,
+.planes-cafetal__button:active {
+  background-color: white;
+  color: #414535;
+  border: 2px solid #414535;
+  transform: none;
 }
 
 /* Estilo del pie de página de la sección */
@@ -1178,10 +1194,6 @@ body {
   .planes-cafetal__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-  }
-
-  .planes-cafetal__plan:nth-child(4) {
-    grid-column: 2;
   }
 
   .hero-title {

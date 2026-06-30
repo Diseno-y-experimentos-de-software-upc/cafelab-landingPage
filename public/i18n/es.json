@@ -42,51 +42,38 @@
   "PLANS": {
     "TITLE": "Escala tu café con herramientas a tu medida.",
     "FOOTER": "Todos nuestros planes incluyen documentación técnica, soporte personalizado y visualizaciones intuitivas para baristas y cafeterías.",
-    "BASE_PLAN": {
-      "TITLE": "Plan Base Cafetal",
-      "PRICE": "s/.19/mes",
+    "BARISTA_PLAN": {
+      "TITLE": "Plan Barista",
+      "PRICE": "$9 / mes",
       "FEATURES": [
-        "✓ Registro básico de tuestes (manual).",
-        "✓ Biblioteca de recetas y módulos.",
-        "✓ Registro de defectos comunes.",
-        "✓ Guía de almacenamiento y control simple de inventario.",
-        "✓ Acceso desde móvil."
+        "Sesiones de cata",
+        "Librería de defectos",
+        "Correlación Tueste-Sabor",
+        "Calibración de Molienda",
+        "Recetas"
       ],
-      "BUTTON": "Conocer Plan Base Cafetal"
+      "BUTTON": "Conocer Plan Barista"
     },
-    "TECHNICAL_PLAN": {
-      "TITLE": "Plan Técnico de Tueste",
-      "PRICE": "s/.49/mes",
+    "OWNER_ADMIN_PLAN": {
+      "TITLE": "Plan Dueño/Administrador",
+      "PRICE": "$9 / mes",
       "FEATURES": [
-        "✓ Todo Plan Base Cafetal.",
-        "✓ Costos automatizados y comparativo por lote.",
-        "✓ Registro digital de tuestes con curvas personalizadas.",
-        "✓ Calculadora de pérdida de peso y rendimiento.",
-        "✓ Biblioteca extendida de perfiles y curvas por origen."
+        "Proveedores",
+        "Inventario",
+        "Lotes de café",
+        "Gestión de costos",
+        "Perfiles de tueste"
       ],
-      "BUTTON": "Conocer Plan Técnico de Tueste"
+      "BUTTON": "Conocer Plan Dueño/Administrador"
     },
-    "ARTIST_PLAN": {
-      "TITLE": "Plan Artista del Tueste",
-      "PRICE": "s/.59/mes",
+    "COMPLETE_PLAN": {
+      "TITLE": "Plan Completo",
+      "PRICE": "$15 / mes",
       "FEATURES": [
-        "✓ Gestor de recetas personalizadas por método y bebida.",
-        "✓ Calibrador de molinos y ratio.",
-        "✓ Portafolio con notas por cliente, origen o evaluación.",
-        "✓ Registro de extracciones y resultados."
+        "Plan Barista",
+        "Plan Dueño/Administrador"
       ],
-      "BUTTON": "Conocer Plan Artista del Tueste"
-    },
-    "SPECIALTY_PLAN": {
-      "TITLE": "Plan D' Especialidad",
-      "PRICE": "s/.81/mes",
-      "FEATURES": [
-        "✓ Control de inventario (verde y tostado).",
-        "✓ Conectividad con sensores IoT (tostadoras).",
-        "✓ Modelado y control sensorial.",
-        "✓ Módulos de certificaciones y capacitaciones."
-      ],
-      "BUTTON": "Conocer Plan D' Especialidad"
+      "BUTTON": "Conocer Plan Completo"
     }
   },
   "TESTIMONIALS": {
@@ -220,7 +207,6 @@
       "CONTACT": "Contactos",
       "TERMS": "Términos y condiciones"
     },
-
     "RESOURCES": {
       "TITLE": "Recursos",
       "LINKEDIN": "LinkedIn",
