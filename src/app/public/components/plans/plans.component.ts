@@ -43,7 +43,7 @@ export class PlansComponent implements OnInit, OnDestroy {
   }
 
   private loadPlans() {
-    const planKeys = ['BASE_PLAN', 'TECHNICAL_PLAN', 'ARTIST_PLAN', 'SPECIALTY_PLAN'];
+    const planKeys = ['BARISTA_PLAN', 'OWNER_ADMIN_PLAN', 'COMPLETE_PLAN'];
     const translationKeys = planKeys.map(key => `PLANS.${key}`);
 
     this.translate.get(translationKeys).subscribe(translations => {
