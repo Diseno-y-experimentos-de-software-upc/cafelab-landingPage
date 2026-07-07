@@ -16,7 +16,7 @@ export class VideosComponent {
   constructor(private sanitizer: DomSanitizer) {
     // Usamos la URL de "embed" de YouTube
     const aboutTheTeamUrl = 'https://www.youtube.com/embed/vh3wes0YLWY';
-    const ExpoUrl = 'https://www.youtube.com/embed/hYDHNbU16zw';
+    const ExpoUrl = 'https://www.youtube.com/embed/F1wwe5DgvQE';
     // Marcamos la URL como segura para que Angular permita su uso
     this.videoUrl1 = this.sanitizer.bypassSecurityTrustResourceUrl(aboutTheTeamUrl);
     this.videoUrl2 = this.sanitizer.bypassSecurityTrustResourceUrl(ExpoUrl);
